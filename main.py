@@ -30,7 +30,7 @@ parser.add_argument('-lr', help='optimizer\'s learning rate', type=float, defaul
 parser.add_argument('-wd', help='weight decay', type=float, default=1e-5)
 parser.add_argument('-bs', help='batch size', type=int, default=256)
 parser.add_argument('-ep', help='number of epochs', type=int, default=500)
-parser.add_argument('-ds', help='specify a dataset', type=str, default='mnist', choices=['mnist', 'fashion', 'kmnist', 'cifar10'], required=False)
+parser.add_argument('-ds', help='specify a dataset', type=str, default='cifar10', choices=['mnist', 'fashion', 'kmnist', 'cifar10'], required=False)
 parser.add_argument('-model', help='model name', type=str, default='linear', choices=['linear', 'mlp', 'convnet', 'resnet'], required=False)
 parser.add_argument('-decaystep', help='learning rate\'s decay step', type=int, default=500)
 parser.add_argument('-decayrate', help='learning rate\'s decay rate', type=float, default=1)
